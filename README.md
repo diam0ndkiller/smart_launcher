@@ -5,4 +5,4 @@ To install, download or clone the repo and run install.sh as sudo
 
 ONLY ON SYSTEMS USING <code>apt</code>
 
-<img src="https://github.com/diam0ndkiller/smart_launcher/tree/main/assets/screenshot-v1.2.png?raw=true" alt="Screenshot">
+<img src="https://github.com/diam0ndkiller/smart_launcher/tree/main/assets/screenshot-v1.2.png" alt="Screenshot">
