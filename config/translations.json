@@ -1,0 +1,68 @@
+{
+	"EN": {
+		"heading": "Linux SMART Launcher",
+		"heading.apps": "Installed Apps",
+		"heading.bookmarks": "Internet Bookmarks",
+
+		"warning": "Warning",
+		"error": "Error",
+
+		"apps.whiteboard": "Whiteboard",
+		"apps.firefox": "Firefox",
+		"apps.calculator": "Calculator",
+		"apps.musescore": "MuseScore",
+		"apps.file-manager": "File Manager",
+		"apps.geogebra": "GeoGebra",
+		"apps.writer": "Word",
+		"apps.calc": "Excel",
+		"apps.impress": "PowerPoint",
+
+		"action_buttons.shutdown": "Shut Down",
+		"action_buttons.quit": "Exit SMART Launcher",
+		"action_buttons.window-overview": "Show Open Windows",
+        "action_buttons.settings": "Settings...",
+
+		"samba.username": "Username",
+		"samba.password": "Password",
+		"samba.login": "Login to access School Network Files",
+		"samba.logged-in": "Already logged in, click to open",
+
+        "settings.heading": "Settings",
+        "settings.language": "Language:",
+        "settings.change-background": "Change Background..."
+	},
+	"DE": {
+		"heading": "Linux SMART Launcher",
+		"heading.apps": "Installierte Programme",
+		"heading.bookmarks": "Internet-Favoriten",
+
+		"warning": "Warnung",
+		"error": "Fehler",
+
+		"apps.whiteboard": "Whiteboard",
+		"apps.firefox": "Firefox",
+		"apps.calculator": "Rechner",
+		"apps.musescore": "MuseScore",
+		"apps.file-manager": "Dateien",
+		"apps.geogebra": "GeoGebra",
+		"apps.writer": "Word",
+		"apps.calc": "Excel",
+		"apps.impress": "PowerPoint",
+
+		"action_buttons.shutdown": "Herunterfahren",
+		"action_buttons.quit": "SMART Launcher verlassen",
+		"action_buttons.window-overview": "Geöffnete Fenster anzeigen",
+        "action_buttons.settings": "Einstellungen...",
+
+		"samba.username": "Benutzername",
+		"samba.password": "Passwort",
+		"samba.login": "Auf Dateien im Schulnetzwerk zugreifen",
+		"samba.logged-in": "Bereits eingeloggt, zum öffnen klicken",
+		"samba.password-error": "Bitte Benutzernamen und Passwort eingeben",
+		"samba.mount-error": "Ein Fehler ist beim Zugriff auf die Netzwerkdateien aufgetreten.",
+
+        "settings.heading": "Einstellungen",
+        "settings.language": "Sprache:",
+        "settings.change-background": "Hintergrund ändern..."
+	}
+}

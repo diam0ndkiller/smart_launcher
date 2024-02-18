@@ -1,0 +1,5 @@
+[
+	["shutdown now", "system-shutdown", "action_buttons.shutdown"],
+	["#exit", "system-log-out", "action_buttons.quit"],
+	["skippy-xd --toggle-window-picker", "preferences-system-windows-move", "action_buttons.window-overview"]
+]

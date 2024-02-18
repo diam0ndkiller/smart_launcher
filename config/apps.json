@@ -1,0 +1,11 @@
+[
+	["xournal", "document-edit", "apps.whiteboard"],
+	["firefox", "firefox", "apps.firefox"],
+	["nautilus", "folder-yellow", "apps.file-manager"],
+	["gnome-calculator", "accessories-calculator", "apps.calculator"],
+	["geogebra", "geogebra", "apps.geogebra"],
+	["musescore", "musescore", "apps.musescore"],
+	["libreoffice --writer", "libreoffice-writer", "apps.writer"],
+	["libreoffice --calc", "libreoffice-calc", "apps.calc"],
+	["libreoffice --impress", "libreoffice-impress", "apps.impress"]
+]
