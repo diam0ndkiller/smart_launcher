@@ -4,12 +4,15 @@ import sys
 
 import configparser
 import os
+
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 import subprocess
 import sqlite3
 import requests
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 VERSION = "V1.2"
 
@@ -423,7 +426,7 @@ class LauncherWidget(QWidget):
         if os.path.exists(favicon_filename):
             return QIcon(scale_icon(QIcon(favicon_filename), size, size))
         else:
-            response = requests.get(f"https://www.google.com/s2/favicons?sz={size}&domain_url={url}")
+            response = requests.get(f"https://www.google.com/s2/favicons?sz={256}&domain_url={url}")
             favicon_url = response.url
             try:
                 subprocess.run(['wget', '-O', favicon_filename, favicon_url], stderr=subprocess.PIPE, check=True)
@@ -589,7 +592,7 @@ class SettingsDialog(QDialog):
             selected_files = file_dialog.selectedFiles()
             if selected_files:
                 CONFIG["background"] = selected_files[0]
-                os.system(f"sed -i 's|background = .*|background = {selected_files[0]}|' '~/.config/skippy-xd/skippy-xd.rc'")
+                os.system(os.path.expanduser(f"sed -i 's|background = .*|background = {selected_files[0]}|' '~/.config/skippy-xd/skippy-xd.rc'"))
                 save_config()
                 restart()
 
