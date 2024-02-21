@@ -14,7 +14,7 @@ import requests
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-VERSION = "V1.2"
+VERSION = "V1.3"
 
 EXPANDING_SPACER_V = QSpacerItem(0, 0, QSizePolicy.Minimum, QSizePolicy.Expanding)
 EXPANDING_SPACER_H = QSpacerItem(0, 0, QSizePolicy.Expanding, QSizePolicy.Minimum)
