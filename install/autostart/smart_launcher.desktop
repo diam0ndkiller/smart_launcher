@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=Linux SMART Launcher
-Exec=~/scripts/smart_launcher/smart_launcher.py
-Path=~/scripts/smart_launcher/
-Icon=~/scripts/smart_launcher/appicon.png
-Type=Application
-Comment=Launcher for Apps on a Interactive Display
