@@ -62,16 +62,6 @@ class ShadowLabel(QLabel):
 
 
 
-class FocusDebug(QObject):
-    def eventFilter(self, obj, event):
-        if event.type() == QEvent.FocusIn:
-            print(f"{obj.objectName()} gained focus")
-        elif event.type() == QEvent.FocusOut:
-            print(f"{obj.objectName()} lost focus")
-        print("test")
-
-
-
 class LauncherWidget(QWidget):
     def __init__(self):
         global FACTOR
@@ -299,7 +289,7 @@ class LauncherWidget(QWidget):
     def update_time(self):
         current_time = QTime.currentTime()
 
-        time_text = current_time.toString('hh:mm:ss')
+        time_text = current_time.toString(CONFIG['time_format'])
 
         self.time_label.setText(time_text)
 
@@ -328,12 +318,6 @@ class LauncherWidget(QWidget):
         self.username_input.setPlaceholderText(get_translation("samba.username"))
         self.username_input.setFont(QFont("Ubuntu", int(FACTOR * 10), QFont.Normal))
         samba_layout.addWidget(self.username_input)
-
-        """self.password_input = QLineEdit(focusPolicy=Qt.StrongFocus)
-        self.password_input.setPlaceholderText(get_translation("samba.password"))
-        self.password_input.setEchoMode(QLineEdit.Password)
-        self.password_input.setFont(QFont("Ubuntu", int(FACTOR * 10), QFont.Normal))
-        samba_layout.addWidget(self.password_input)"""
 
         self.samba_login_button = QPushButton(get_translation("samba.login"))
         self.samba_login_button.clicked.connect(self.login_to_samba)
@@ -592,7 +576,7 @@ class SettingsDialog(QDialog):
             selected_files = file_dialog.selectedFiles()
             if selected_files:
                 CONFIG["background"] = selected_files[0]
-                os.system(os.path.expanduser(f"sed -i 's|background = .*|background = {selected_files[0]}|' '~/.config/skippy-xd/skippy-xd.rc'"))
+                os.system(f"sed -i 's|background = .*|background = {selected_files[0]}|' '{os.path.expanduser('~/.config/skippy-xd/skippy-xd.rc')}'")
                 save_config()
                 restart()
 
@@ -647,7 +631,7 @@ def set_language(l):
 
 
 def restart():
-    subprocess.Popen([sys.executable, sys.argv[0]])
+    subprocess.Popen([sys.executable, os.path.abspath(__file__)])
     sys.exit()
 
 
