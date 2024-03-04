@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Touchégg
+Exec=touchegg
+Icon=libinput-gestures
+Comment=Touchégg Multi-Touch Gesture Client
